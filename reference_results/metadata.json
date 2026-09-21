@@ -1,0 +1,135 @@
+{
+  "status": "template",
+  "scope": "matched",
+  "repetitions": 3,
+  "expected_timed_alignments": 120000,
+  "samples_per_dataset": 1000,
+  "algorithms": {
+    "ebi_native_dynamic": "Ebi Native Dynamic Alignments",
+    "cpp": "C++ Dynamic Alignments",
+    "ebi_default": "Ebi Default Alignments",
+    "python_dynamic": "Python Dynamic Alignments",
+    "pm4py": "PM4Py process-tree alignments (corrected)"
+  },
+  "pairs": [
+    {
+      "dataset": 2012,
+      "model_dataset": 2012,
+      "model": "pt00",
+      "name": "bpi2012_model2012_pt00"
+    },
+    {
+      "dataset": 2012,
+      "model_dataset": 2012,
+      "model": "pt10",
+      "name": "bpi2012_model2012_pt10"
+    },
+    {
+      "dataset": 2012,
+      "model_dataset": 2012,
+      "model": "pt25",
+      "name": "bpi2012_model2012_pt25"
+    },
+    {
+      "dataset": 2012,
+      "model_dataset": 2012,
+      "model": "pt50",
+      "name": "bpi2012_model2012_pt50"
+    },
+    {
+      "dataset": 2017,
+      "model_dataset": 2017,
+      "model": "pt00",
+      "name": "bpi2017_model2017_pt00"
+    },
+    {
+      "dataset": 2017,
+      "model_dataset": 2017,
+      "model": "pt10",
+      "name": "bpi2017_model2017_pt10"
+    },
+    {
+      "dataset": 2017,
+      "model_dataset": 2017,
+      "model": "pt25",
+      "name": "bpi2017_model2017_pt25"
+    },
+    {
+      "dataset": 2017,
+      "model_dataset": 2017,
+      "model": "pt50",
+      "name": "bpi2017_model2017_pt50"
+    }
+  ],
+  "samples": {
+    "2012": {
+      "source_xes": "DATAFILES/BPI_Challenge_2012.xes",
+      "source_xes_sha256": "d13660dedf2269e32dfb7ec2228d7cb3c9665e0a4c54edf7bd18f1fad6f12232",
+      "sample_xes": "inputs/bpi2012/sampled_1000_unique_traces.xes",
+      "manifest": "inputs/bpi2012/sample_manifest.json",
+      "sampling": "Python random.Random(42).sample; uniform without replacement over variants in first-occurrence order",
+      "event_filter": "none; all lifecycle transitions retained"
+    },
+    "2017": {
+      "source_xes": "DATAFILES/BPI_Challenge_2017.xes",
+      "source_xes_sha256": "d653a36d36fac668638d65c90b803670bab6e599aa23e3f7dd4f0d5d0b216b1c",
+      "sample_xes": "inputs/bpi2017/sampled_1000_unique_traces.xes",
+      "manifest": "inputs/bpi2017/sample_manifest.json",
+      "sampling": "Python random.Random(42).sample; uniform without replacement over variants in first-occurrence order",
+      "event_filter": "none; all lifecycle transitions retained"
+    }
+  },
+  "models": {
+    "2012_pt00": "inputs/models/BPI_Challenge_2012_pt00.ptml",
+    "2012_pt10": "inputs/models/BPI_Challenge_2012_pt10.ptml",
+    "2012_pt25": "inputs/models/BPI_Challenge_2012_pt25.ptml",
+    "2012_pt50": "inputs/models/BPI_Challenge_2012_pt50.ptml",
+    "2017_pt00": "inputs/models/BPI_Challenge_2017_pt00.ptml",
+    "2017_pt10": "inputs/models/BPI_Challenge_2017_pt10.ptml",
+    "2017_pt25": "inputs/models/BPI_Challenge_2017_pt25.ptml",
+    "2017_pt50": "inputs/models/BPI_Challenge_2017_pt50.ptml"
+  },
+  "pm4py_version": "2.7.23.8",
+  "pm4py_local_patch": {
+    "base_pm4py_version": "2.7.23.8",
+    "local_patch": "silent-move reconstruction and heap repair on decreased costs",
+    "original_sha256": "cdb443f8ac324ab6317b9175f1320a5c84a3434f98c60fffd7d576194b30a5d2",
+    "patched_sha256": "7b3cf07c03a5e6ff736c9bb317c74d908b303637fb9ee145602a1f5741d121e6"
+  },
+  "protocol": "Three full passes; fresh process/model per algorithm/model/pass; same sample order each pass",
+  "warmup_traces_per_process": 3,
+  "benchmark_parallelism": 1,
+  "python_hash_seed": 42,
+  "minimum_policy": "Minimum completed, validated alignment time across exactly three recorded repetitions; ties choose earliest repetition",
+  "timeout_seconds": {
+    "python_dynamic": 600,
+    "pm4py": 600,
+    "ebi_default": 600,
+    "cpp": 60,
+    "ebi_native_dynamic": null
+  },
+  "timeout_note": "600 seconds avoids censoring the Python trace that previously needed about 73 seconds; C++ retains its built-in 60-second timeout",
+  "cross_trace_alignment_cache": false,
+  "normal_python_garbage_collection": true,
+  "timing_scope_note": "Native DP includes ProcessTreeAligner preparation and the standard alignment interface; C++/Python dynamic return costs, Ebi/PM4Py return full alignments. Parsing, input construction, validation and CSV output are excluded.",
+  "default_cost_note": "Ebi Default optimizes visible=10000, silent=1, synchronous=0; comparison cost counts visible deviations. Others use visible=1, silent/synchronous=0.",
+  "native_binaries": "Reused exact preserved release binaries/modules; no rebuild or algorithm edits",
+  "experiment_kind": "Minimal executable five-algorithm benchmark; user-supplied source XES logs",
+  "percentile_method": "statistics.quantiles(n=100, method=\"inclusive\")[94]; recomputed uniformly",
+  "native_timed_call": "ProcessTreeAligner::new(&tree)?.align_stochastic_language(single_trace_language)",
+  "native_timing_includes": [
+    "native tree preparation and unique-label validation",
+    "activity-key translation",
+    "DP with fresh per-trace cache",
+    "full move reconstruction",
+    "stochastic alignment result assembly"
+  ],
+  "native_timing_excludes": [
+    "XES/PTML parsing",
+    "single-trace input construction",
+    "warm-ups",
+    "reference-cost validation and native replay",
+    "CSV output"
+  ],
+  "model_coverage_note": "All eight original PTML models contain no Interleaved or inclusive OR nodes; this experiment measures existing-workload performance of the new build, not Interleaved-specific performance."
+}

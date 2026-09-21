@@ -1,0 +1,230 @@
+{
+  "format_version": 2,
+  "files": {
+    "install_dependencies.py": {
+      "sha256": "cae0a86213507ffc3ccd0041108611e3c487d16891f54897dee88ef7d8fb5e61",
+      "bytes": 19122
+    },
+    "run_benchmark.py": {
+      "sha256": "f83c4f9b083e5447c157240e47df751628c694392fc08fe9c52b2e08630588ef",
+      "bytes": 9633
+    },
+    "environment/manifest.json": {
+      "sha256": "5a3be04fc06cebc9405f13abef1cbd709cf0066ef7519b5297ba4a45cc695464",
+      "bytes": 5628
+    },
+    "environment/requirements_cpp.txt": {
+      "sha256": "b1ef0a4f9efaebef146ea8b4f86eb28a92de97d853ab03f0279b8b6ede1f41d0",
+      "bytes": 352
+    },
+    "environment/requirements_python.txt": {
+      "sha256": "24ce20ecda087575101fc31a980e1e83520df261edb4004b24aae726f5ca85e6",
+      "bytes": 778
+    },
+    "bin/ebi-native-dynamic-benchmark": {
+      "sha256": "9f12b784a45db23b060e31183402d8579eef34f92269ba3b9a9c1b1899231d6c",
+      "bytes": 16492728
+    },
+    "bin/standard-alignments-benchmark": {
+      "sha256": "119ebdb0a55cde042e69f6979a3c7a40c0a76148e854731c91e02c5ac0280e68",
+      "bytes": 3416840
+    },
+    "bin/ebi-native-dynamic-smoke": {
+      "sha256": "16e41a6d45968abde0937d30137dd7b6a04ec0c0986af738a687b2c3c58516e4",
+      "bytes": 16491824
+    },
+    "bin/alignment.cpython-314-x86_64-linux-gnu.so": {
+      "sha256": "8633957fa162189e013c7e6134ed0b771dbc0b9863cccb7e3a6cc6da1de228c7",
+      "bytes": 233184
+    },
+    "sources/dynamic_alignment.py": {
+      "sha256": "4676bedcd6997a5a7d2764b5cbbac3bccc1678e47b26a6f9df2a3c2cd341c9c5",
+      "bytes": 12309
+    },
+    "sources/pm4py/util/exec_utils.py": {
+      "sha256": "606b0ab152678a92224fbb61f778100c3082c8609b5f31457a02ee1f98a4be8f",
+      "bytes": 1659
+    },
+    "sources/pm4py/algo/conformance/alignments/process_tree/algorithm.py": {
+      "sha256": "260388157bd7abee03a695928bc7a523abcf5b1004b18fa63189a2acd8903893",
+      "bytes": 2249
+    },
+    "sources/pm4py/algo/conformance/alignments/process_tree/variants/search_graph_pt.py": {
+      "sha256": "7b3cf07c03a5e6ff736c9bb317c74d908b303637fb9ee145602a1f5741d121e6",
+      "bytes": 18896
+    },
+    "sources/pm4py/algo/conformance/alignments/process_tree/util/search_graph_pt_replay_semantics.py": {
+      "sha256": "4e35bd26ed980207f73b4cf6e054ac65b6bee327928e592dd11523ba842d53d9",
+      "bytes": 16976
+    },
+    "sources/pm4py/objects/log/obj.py": {
+      "sha256": "9159892725fa6e5ae992149f25f0eaca4fee333033f3da3180f5559e56992840",
+      "bytes": 12629
+    },
+    "sources/pm4py/objects/process_tree/obj.py": {
+      "sha256": "5da256eb97641fa8bb1f5c77d8f2561d4a602670ddd0525d88cca99229be9253",
+      "bytes": 9244
+    },
+    "sources/pm4py/objects/process_tree/utils/generic.py": {
+      "sha256": "82f378bcd0a85f76e95ee68f92b29b717b20c123d1c70b1e907fe10f3c9328d6",
+      "bytes": 17114
+    },
+    "sources/pm4py/objects/process_tree/importer/importer.py": {
+      "sha256": "5b584496bf3c834c4cbbf96224ff906c5afdd2fb23e29be54641662216dfc571",
+      "bytes": 2144
+    },
+    "sources/pm4py/objects/process_tree/importer/variants/ptml.py": {
+      "sha256": "984cda481811551bfdab5025711a7deb44dbbc43172503725b5b2dcfe7969635",
+      "bytes": 5555
+    },
+    "sources/pm4py/objects/petri_net/utils/align_utils.py": {
+      "sha256": "c675df53caf4c82687a4677de8a08f3fdecb06e157a4dbcc5ea4fed76266da98",
+      "bytes": 19684
+    },
+    "scripts/benchmark_engine.py": {
+      "sha256": "ea5f9f74ab42b2fc12dd09df30c056f4e5227cfae2115ab7c051949d627e61c6",
+      "bytes": 20922
+    },
+    "scripts/verify_results.py": {
+      "sha256": "4151c56f2e6f6e87153e50f219e7adfd989783971032afa75a0dc3e4f589f24f",
+      "bytes": 23643
+    },
+    "scripts/run_benchmark.py": {
+      "sha256": "15da96eb24b4207f14fb6f341fc21575a207cad71bdd28e81f2f4fa7fef04c22",
+      "bytes": 8737
+    },
+    "support/pm4py_runner.py": {
+      "sha256": "95fce0db1c5673a2a02e7712dbf541e4cea0167f115d132a9f8a061ba9037e8e",
+      "bytes": 27495
+    },
+    "support/default_controller.py": {
+      "sha256": "c0434a5917fff0cbc7fc9c6c38d732fd925b081dc48b246a0600247310a3571b",
+      "bytes": 13801
+    },
+    "support/benchmark_helpers.py": {
+      "sha256": "99e658b42b3b3bce2140feab7d0ad956ff0e8ec5bd710ce64a6707d807358455",
+      "bytes": 22236
+    },
+    "inputs/bpi2017/sample_manifest.json": {
+      "sha256": "9bba0f429684e5624b788a0b5ab0c07267bed3278cc719c31ae9e7a3949d5478",
+      "bytes": 1647077
+    },
+    "inputs/models/BPI_Challenge_2012_pt25.ptml": {
+      "sha256": "cfdb0deb83b196ae329b661548a545b79731b357c85eac654fa9d54ecb109fb3",
+      "bytes": 18983
+    },
+    "inputs/models/BPI_Challenge_2012_pt10.ptml": {
+      "sha256": "94432daaacd2dd391c631810cf0edd33dc7536c22bd98449c8b58cf3fb39b1e3",
+      "bytes": 17369
+    },
+    "inputs/models/BPI_Challenge_2012_pt00.ptml": {
+      "sha256": "b574e39ce8c0c63582eaf0b4b44e49486ab3d8d9347a1a2044188137b0a27dd4",
+      "bytes": 24117
+    },
+    "inputs/models/BPI_Challenge_2012_pt50.ptml": {
+      "sha256": "5b2af0d628b02cc6b6a1500d149608fe50a9017ad2db0b4c1ab81289af555c66",
+      "bytes": 17839
+    },
+    "inputs/models/BPI_Challenge_2017_pt50.ptml": {
+      "sha256": "a7517939d2eab8ce6ac99df363ccdb6962b9cd23f2f841564c15588e4d169d43",
+      "bytes": 17705
+    },
+    "inputs/models/BPI_Challenge_2017_pt10.ptml": {
+      "sha256": "bf7f23dbdfc407c7681c18d59e2cde43cb30f23b604156fe9d1f0ef13ea265dc",
+      "bytes": 19034
+    },
+    "inputs/models/BPI_Challenge_2017_pt00.ptml": {
+      "sha256": "5d9187545775358a1fc23fd790efb358d3e666d754cda422e0654ceb30f00c14",
+      "bytes": 26688
+    },
+    "inputs/models/BPI_Challenge_2017_pt25.ptml": {
+      "sha256": "c46ec0a325d8d322834353b9efe90abfb6b188872e9d36d3447ee0d0106616c4",
+      "bytes": 23764
+    },
+    "inputs/reference/bpi2017_pt25.csv": {
+      "sha256": "1459132063373b771a2305c5fbb2edbd2181dedf91513dd461650166d300520b",
+      "bytes": 105149
+    },
+    "inputs/reference/bpi2017_pt00_costs.json": {
+      "sha256": "3df2411363fc5000c1597ecf5db1a6a4d8dfc8554d3cec8ce3a73790676e834b",
+      "bytes": 5003
+    },
+    "inputs/reference/bpi2012_pt50_costs.json": {
+      "sha256": "11ec7118860f3271c9078c5c5b6264f6dea9b26b5dfcc250834b53393359ce8e",
+      "bytes": 5012
+    },
+    "inputs/reference/bpi2017_pt00.csv": {
+      "sha256": "ac737fb08ec9b717a4cfb6ba3f1019aceb4e060adc5f830c3e9429406802e142",
+      "bytes": 105110
+    },
+    "inputs/reference/bpi2012_pt25_costs.json": {
+      "sha256": "7197489dab542a477c1d717c031bacc6474b786e5b4f1b3b460d15342c8d87b9",
+      "bytes": 5003
+    },
+    "inputs/reference/bpi2017_pt50_costs.json": {
+      "sha256": "362949114083e6c294178e838f2bbf97b043370663e52a8de89025d73a82c77b",
+      "bytes": 5998
+    },
+    "inputs/reference/bpi2017_pt25_costs.json": {
+      "sha256": "be1ab52a8d98680273edcc09c2e0ee8003e6527b4eb6fab1bf76d577499c243e",
+      "bytes": 5042
+    },
+    "inputs/reference/bpi2012_pt50.csv": {
+      "sha256": "899f0eee6babaa295087de0f9ddc528d0084108fc6ecbf8631e06ad7dd51abaf",
+      "bytes": 89130
+    },
+    "inputs/reference/bpi2012_pt10.csv": {
+      "sha256": "b88f78f0eec304ca518abb32cae2ea4e994ec5671713947ae17a3e540d64da9a",
+      "bytes": 89641
+    },
+    "inputs/reference/bpi2017_pt10_costs.json": {
+      "sha256": "aa2e007931f2607331f3cf620a614a06478dfffe86bd047e058d04346e627982",
+      "bytes": 5077
+    },
+    "inputs/reference/bpi2012_pt00.csv": {
+      "sha256": "0f2f43cf547de8120d673d44c496197ced266f866a42b326e5e67ae6bdb058e9",
+      "bytes": 89121
+    },
+    "inputs/reference/bpi2017_pt10.csv": {
+      "sha256": "86f6f874dbc344692c2d5648c0482891c6f8156b8d78dabca2d9122bac665ed1",
+      "bytes": 105184
+    },
+    "inputs/reference/bpi2012_pt10_costs.json": {
+      "sha256": "520424277e014e4de139c8201940b21ea8cba08673ad91bf013d4bf2fcbb00f2",
+      "bytes": 5523
+    },
+    "inputs/reference/bpi2012_pt25.csv": {
+      "sha256": "e22dfb9714d61d1a57d4d20a29bb4c76ab666d61106f7267f30d3273a105654b",
+      "bytes": 89121
+    },
+    "inputs/reference/bpi2017_pt50.csv": {
+      "sha256": "01170d85cf5c0ef5c027cdb87d1df7ea6f23ae874a3d9994d4d2a8d2503f3d78",
+      "bytes": 106105
+    },
+    "inputs/reference/bpi2012_pt00_costs.json": {
+      "sha256": "3df2411363fc5000c1597ecf5db1a6a4d8dfc8554d3cec8ce3a73790676e834b",
+      "bytes": 5003
+    },
+    "inputs/bpi2012/sample_manifest.json": {
+      "sha256": "2c5efbbb593fa80423f3c0b029399eeb434ec8bc95284920ad2420672fb0bc6a",
+      "bytes": 1448035
+    },
+    "reference_results/metadata.json": {
+      "sha256": "cc2fe2c5d7087b294de47f17ebe77432184def6c50badfbf8bd482cfffa6f40c",
+      "bytes": 5510
+    },
+    "licenses/Ebi.txt": {
+      "sha256": "fc0798cf0cc3653088194c935190e1f9dcb01435abec8e0ea954ac4355cca340",
+      "bytes": 1075
+    },
+    "licenses/pybind11.txt": {
+      "sha256": "83965b843b98f670d3a85bd041ed4b372c8ec50d7b4a5995a83ac697ba675dcb",
+      "bytes": 1684
+    }
+  },
+  "original_sample_hashes": {
+    "2012": "191345656d5638b2219526fabd0ee5dcff99734afee7c685eba4d18292bfab66",
+    "2017": "87972a80bd5f31be2ebc5a0d932b9afbe7c7bf0e39e8a353f4a192937a345048"
+  },
+  "description": "Ordinary executable package; Python dependencies downloaded from exact pins; generated files excluded."
+}
